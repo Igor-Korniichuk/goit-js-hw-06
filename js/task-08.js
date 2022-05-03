@@ -15,7 +15,8 @@ function onHendlerForm(event) {
     };
     
     if (email === '' || password === '') {
-        window.alert("Все поля должны быть заполнены!");
+        return window.alert("Все поля должны быть заполнены!");
+
     }
     console.log(formElementsItems);
     formEl.reset();
